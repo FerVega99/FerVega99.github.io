@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="stylesClases.css">
+    <link rel="icon" href="/imagenes/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>GYM UNJU</title>
+</head>
+
+<body>
+    <header>
+        <h1>GYM UNJU</h1>
+        <button id="modo-toggle">Modo Oscuro</button>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="/home/home.html">Home</a>
+                <!-- Menu desplegable -->
+                <ul>
+                    <li><a href="/home/home.html#video-hero">Hero</a></li>
+                    <li><a href="/home/home.html#clases">Clases Destacadas</a></li>
+                    <li><a href="/home/home.html#testimonios-socios">Testimonios</a></li>
+                    <li><a href="/home/home.html#contador-socios">Socios</a></li>
+                </ul>
+                <!-- Menu desplegable -->
+            </li>
+            <li><a href="/clases/clases.html">Clases</a>
+                <ul>
+                    <li><a href="/clases/clases.html#galeria-clases">Galeria</a></li>
+                    <li><a href="/clases/clases.html#horarios">Horarios</a></li>
+                </ul>
+            </li>
+            <li><a href="/entrenadores/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/precios/precios.html">Precios</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="clases-contenedor">
+        <h2 id="galeria-clases">Nuestras Clases</h2>
+        <div class="clases-page">
+            <section class="filtros">
+                <!-- Radios para filtrar -->
+                <input type="radio" name="categoria" id="todos" checked>
+                <label for="todos">Todos</label>
+
+                <input type="radio" name="categoria" id="funcional">
+                <label for="funcional">Funcional</label>
+
+                <input type="radio" name="categoria" id="musculacion">
+                <label for="musculacion">Musculación</label>
+
+                <input type="radio" name="categoria" id="yoga">
+                <label for="yoga">Yoga</label>
+
+                <input type="radio" name="categoria" id="spinning">
+                <label for="spinning">Spinning</label>
+
+                <!-- Galería de clases -->
+                <div class="galeria">
+                    <!-- FUNCIONAL -->
+                    <div class="tarjeta funcional">
+                        <img src="img/funcional.jpg" alt="Funcional 1">
+                        <div class="info">
+                            <h3>Funcional Básico</h3>
+                            <p>Ideal para empezar con ejercicios integrales.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta funcional">
+                        <img src="img/funcional2.jpg" alt="Funcional 2">
+                        <div class="info">
+                            <h3>Funcional Intermedio</h3>
+                            <p>Mejorá tu resistencia con rutinas dinámicas.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta funcional">
+                        <img src="img/funcional3.jpg" alt="Funcional 3">
+                        <div class="info">
+                            <h3>Funcional Avanzado</h3>
+                            <p>Entrenamiento de alta intensidad para expertos.</p>
+                        </div>
+                    </div>
+
+                    <!-- MUSCULACIÓN -->
+                    <div class="tarjeta musculacion">
+                        <img src="img/musculacion.jpg" alt="Musculación 1">
+                        <div class="info">
+                            <h3>Musculación Básica</h3>
+                            <p>Fuerza y técnica para principiantes.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta musculacion">
+                        <img src="img/musculacion2.jpg" alt="Musculación 2">
+                        <div class="info">
+                            <h3>Musculación Intermedia</h3>
+                            <p>Progresión muscular para nivel medio.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta musculacion">
+                        <img src="img/musculacion3.jpg" alt="Musculación 3">
+                        <div class="info">
+                            <h3>Musculación Pro</h3>
+                            <p>Desarrollo muscular avanzado y definición.</p>
+                        </div>
+                    </div>
+
+                    <!-- YOGA -->
+                    <div class="tarjeta yoga">
+                        <img src="img/yoga.jpg" alt="Yoga 1">
+                        <div class="info">
+                            <h3>Yoga Suave</h3>
+                            <p>Relajación y estiramiento para todos los niveles.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta yoga">
+                        <img src="img/yoga2.jpg" alt="Yoga 2">
+                        <div class="info">
+                            <h3>Yoga Vinyasa</h3>
+                            <p>Movimientos fluidos y coordinación.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta yoga">
+                        <img src="img/yoga3.jpg" alt="Yoga 3">
+                        <div class="info">
+                            <h3>Yoga Terapéutico</h3>
+                            <p>Concentración y bienestar físico-mental.</p>
+                        </div>
+                    </div>
+
+                    <!-- SPINNING -->
+                    <div class="tarjeta spinning">
+                        <img src="img/spinning.jpg" alt="Spinning 1">
+                        <div class="info">
+                            <h3>Spinning Básico</h3>
+                            <p>Entrenamiento cardiovascular en bicicleta.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta spinning">
+                        <img src="img/spinning2.jpg" alt="Spinning 2">
+                        <div class="info">
+                            <h3>Spinning Intermedio</h3>
+                            <p>Sesiones con intervalos y resistencia media.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta spinning">
+                        <img src="img/spinning3.jpg" alt="Spinning 3">
+                        <div class="info">
+                            <h3>Spinning Avanzado</h3>
+                            <p>Alta intensidad para quemar calorías rápido.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="horarios" class="horarios">
+                <h2>Horarios Semanales</h2>
+                <div class="tabla-horarios">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>08:00</th>
+                                <th>10:00</th>
+                                <th>14:00</th>
+                                <th>18:00</th>
+                                <th>20:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>Yoga</td>
+                                <td>Musculación</td>
+                                <td>Spinning</td>
+                                <td>Funcional</td>
+                                <td>Yoga</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>Funcional</td>
+                                <td>Spinning</td>
+                                <td>Yoga</td>
+                                <td>Musculación</td>
+                                <td>Spinning</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>Yoga</td>
+                                <td>Musculación</td>
+                                <td>Spinning</td>
+                                <td>Funcional</td>
+                                <td>Yoga</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>Spinning</td>
+                                <td>Funcional</td>
+                                <td>Yoga</td>
+                                <td>Musculación</td>
+                                <td>Spinning</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>Yoga</td>
+                                <td>Musculación</td>
+                                <td>Spinning</td>
+                                <td>Funcional</td>
+                                <td>Yoga</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <h3>Unete</h3>
+                    <li><a href="/formulario/formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <h2>¿Dónde estamos?</h2>
+                <div class="mapa-contenedor">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1743920320366!6m8!1m7!1soo9Paq0_wZK9_2CVhonnnA!2m2!1d-24.188764241836!2d-65.29459801253627!3f71.02562670407575!4f-35.74684803639043!5f0.7820865974627469"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Síguenos en redes sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 GYM UNJU. All rights reserved.</p>
+    </footer>
+    <script>
+        const botonModo = document.getElementById('modo-toggle');
+      
+        botonModo.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      </script>
+</body>
+
+</html>

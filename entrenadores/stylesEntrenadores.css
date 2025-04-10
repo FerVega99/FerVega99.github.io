@@ -1,0 +1,133 @@
+.entrenadores {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    color: #191b8e;
+  }
+  
+  .entrenadores h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card {
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .card-front {
+    background: #191b8e;
+    color: white;
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-back {
+    background: #eee;
+    color: #191b8e;
+    transform: rotateY(180deg);
+  }
+  
+  .card-back p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Habilidades animadas */
+  .habilidades {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .barra {
+    width: 100%;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .relleno {
+    height: 100%;
+    border-radius: 5px;
+    animation: crecer 2s ease-out forwards;
+  }
+  
+  .fuerza {
+    width: 90%;
+    background-color: #191b8e;
+  }
+  
+  .flexibilidad {
+    width: 80%;
+    background-color: #3c3ee0;
+  }
+
+  .resistencia {
+    width: 85%;
+    background-color: #28a745; /* Verde */
+  }
+  
+  @keyframes crecer {
+    from {
+      width: 0;
+    }
+  }
+  
+  /* Estrellas animadas */
+  .rating {
+    font-size: 1.5rem;
+    color: #ffc107;
+    animation: brillar 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes brillar {
+    from {
+      text-shadow: 0 0 2px #ffc107;
+    }
+    to {
+      text-shadow: 0 0 10px #ffc107;
+    }
+  }
+  

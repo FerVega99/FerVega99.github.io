@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/blog/stylesBlog.css" />
+  <link rel="icon" href="/imagenes/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <title>GYM UNJU</title>
+</head>
+
+<body>
+  <header>
+    <h1>GYM UNJU</h1>
+    <button id="modo-toggle">Modo Oscuro</button>
+  </header>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="/home/home.html">Home</a>
+        <!-- Menu desplegable -->
+        <ul>
+          <li><a href="/home/home.html#video-hero">Hero</a></li>
+          <li><a href="/home/home.html#clases">Clases Destacadas</a></li>
+          <li><a href="/home/home.html#testimonios-socios">Testimonios</a></li>
+          <li><a href="/home/home.html#contador-socios">Socios</a></li>
+        </ul>
+        <!-- Menu desplegable -->
+      </li>
+      <li><a href="/clases/clases.html">Clases</a>
+        <ul>
+          <li><a href="/clases/clases.html#galeria-clases">Galeria</a></li>
+          <li><a href="/clases/clases.html#horarios">Horarios</a></li>
+        </ul>
+      </li>
+      <li><a href="/entrenadores/entrenadores.html">Entrenadores</a></li>
+      <li><a href="/precios/precios.html">Precios</a></li>
+      <li><a href="/blog/blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="blog-section">
+    
+    <aside class="sidebar">
+      <h3>Filtrar por categoría</h3>
+      <div class="filtros">
+        <label>
+          <input type="radio" name="filtro" id="todo" checked>
+          Todo
+        </label>
+        <label>
+          <input type="radio" name="filtro" id="fitness">
+          Fitness
+        </label>
+        <label>
+          <input type="radio" name="filtro" id="nutricion">
+          Nutrición
+        </label>
+        <label>
+          <input type="radio" name="filtro" id="cardio">
+          Cardio
+        </label>
+        <label>
+          <input type="radio" name="filtro" id="motivacion">
+          Motivación
+        </label>
+      </div>
+    </aside>
+
+    <h2> NUESTRO BLOG</h2>
+    <div class="grid-blog">
+      <article class="fitness">
+        <img src="img/fitness.jpg" alt="Entrenamiento funcional">
+        <h4>Entrenamiento funcional</h4>
+        <p>Beneficios de la rutina funcional para todo el cuerpo.</p>
+      </article>
+
+      <article class="nutricion">
+        <img src="img/nutricion.jpg" alt="Alimentación post-entreno">
+        <h4>Alimentación post-entreno</h4>
+        <p>Qué comer después de ejercitarte para recuperarte mejor.</p>
+      </article>
+
+      <article class="cardio">
+        <img src="img/cardio.jpg" alt="Ejercicios de resistencia">
+        <h4>Mejora tu resistencia</h4>
+        <p>Los mejores ejercicios aeróbicos para tu salud cardiovascular.</p>
+      </article>
+
+      <article class="motivacion">
+        <img src="img/motivacion.jpg" alt="Motivación para entrenar">
+        <h4>Motivación para entrenar</h4>
+        <p>Cómo mantener la constancia y no abandonar el gimnasio.</p>
+      </article>
+
+      <article class="fitness">
+        <img src="img/fitness2.jpg" alt="Ejercicios con peso corporal">
+        <h4>Ejercicios con peso corporal</h4>
+        <p>Entrená en casa sin necesidad de equipos costosos.</p>
+      </article>
+
+      <article class="cardio">
+        <img src="img/cardio2.jpg" alt="Ejercicios de resistencia">
+        <h4>Mejora tu resistencia</h4>
+        <p>Los mejores ejercicios aeróbicos para tu salud cardiovascular.</p>
+      </article>
+    </div>
+  </section>
+  <!-- Comentarios -->
+  <section class="comentarios">
+    <h3>Comentarios</h3>
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p><strong>Laura:</strong> Muy útil la rutina de cardio</p>
+    </div>
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p><strong>Pedro:</strong> Me encantó el enfoque nutricional</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <div>
+        <ul>
+          <h3>Únete</h3>
+          <li><a href="/formulario/formulario.html">Formulario</a></li>
+        </ul>
+      </div>
+      <div class="mapa">
+        <h2>¿Dónde estamos?</h2>
+        <div class="mapa-contenedor">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1743920320366!6m8!1m7!1soo9Paq0_wZK9_2CVhonnnA!2m2!1d-24.188764241836!2d-65.29459801253627!3f71.02562670407575!4f-35.74684803639043!5f0.7820865974627469"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <div>
+        <h3>Síguenos en redes sociales</h3>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2023 GYM UNJU. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('input[name="filtro"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        const valor = radio.id;
+        const articulos = document.querySelectorAll('.grid-blog article');
+
+        articulos.forEach(articulo => {
+          if (valor === "todo") {
+            articulo.style.display = "block";
+          } else {
+            if (articulo.classList.contains(valor)) {
+              articulo.style.display = "block";
+            } else {
+              articulo.style.display = "none";
+            }
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    const botonModo = document.getElementById('modo-toggle');
+  
+    botonModo.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+
+</html>

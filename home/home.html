@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/home/stylesHome.css">
+    <link rel="icon" href="/imagenes/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>GYM UNJU</title>
+</head>
+
+<body>
+    <header>
+        <h1>GYM UNJU</h1>
+        <button id="modo-toggle">Modo Oscuro</button>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="/home/home.html">Home</a>
+                <!-- Menu desplegable -->
+                <ul>
+                    <li><a href="/home/home.html#video-hero">Hero</a></li>
+                    <li><a href="/home/home.html#clases">Clases Destacadas</a></li>
+                    <li><a href="/home/home.html#testimonios-socios">Testimonios</a></li>
+                    <li><a href="/home/home.html#contador-socios">Socios</a></li>
+                </ul>
+                <!-- Menu desplegable -->
+            </li>
+            <li><a href="/clases/clases.html">Clases</a>
+                <ul>
+                    <li><a href="/clases/clases.html#galeria-clases">Galeria</a></li>
+                    <li><a href="/clases/clases.html#horarios">Horarios</a></li>
+                </ul>
+            </li>
+            <li><a href="/entrenadores/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/precios/precios.html">Precios</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <div id="video-hero" class="hero">
+            <video autoplay muted loop class="video-fondo">
+                <source src="/home/videos/hero.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <div class="overlay-texto">
+                <h1 class="animado">GYM UNJU</h1>
+                <p class="animado">"Los ganadores nunca renuncian y los que renuncian nunca ganan"</p>
+            </div>
+        </div>
+
+        <div id="clases" class="clases-destacadas">
+            <h2>CLASES DESTACADAS</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="/home/img/funcional.jpg" alt="Funcional">
+                    <div class="info">
+                        <h3>Funcional</h3>
+                        <p>Imita movimientos cotidianos, como agacharse, saltar o empujar.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/home/img/musculacion.jpg" alt="Musculación">
+                    <div class="info">
+                        <h3>Musculación</h3>
+                        <p>Consiste en contraer los músculos para desarrollarlos y fortalecerlos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/home/img/zumba.jpg" alt="Zumba">
+                    <div class="info">
+                        <h3>Zumba</h3>
+                        <p>Ejercicios aeróbicos al ritmo de música para perder peso de forma divertida y mejorar el
+                            estado de ánimo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonios-socios" class="testimonios">
+            <h2>TESTIMONIOS</h2>
+
+            <div class="carrusel">
+
+                <!-- Controles -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <!-- Tarjetas -->
+                <div class="slides">
+                    <div class="slide" id="testimonio1">
+                        <h4>- Ana López -</h4>
+                        <img src="/home/img/persona1.jpg" alt="Ana López">
+                        <p>"Este gimnasio cambió mi vida. ¡Ambiente genial!"</p>
+
+                    </div>
+
+                    <div class="slide" id="testimonio2">
+                        <h4>- Javier Gómez -</h4>
+                        <img src="/home/img/persona2.jpg" alt="Javier Gómez">
+                        <p>"Las clases son súper dinámicas y los profes excelentes."</p>
+                    </div>
+
+                    <div class="slide" id="testimonio3">
+                        <h4>- Carla Méndez -</h4>
+                        <img src="/home/img/persona3.jpg" alt="Carla Méndez">
+                        <p>"Me siento motivado cada día que vengo. ¡Lo recomiendo!"</p>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="navegacion">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+        </div>
+
+        <div id="contador-socios" class="contador">
+            <h2>CONTADOR</h2>
+            <div class="contenedor-cards">
+                <div class="card-contador">
+                    <h3 class="numero">500+</h3>
+                    <p>Socios satisfechos</p>
+                </div>
+
+                <div class="card-contador">
+                    <h3 class="numero">120+</h3>
+                    <p>Clases semanales</p>
+                </div>
+
+                <div class="card-contador">
+                    <h3 class="numero">10+</h3>
+                    <p>Entrenadores certificados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const botonModo = document.getElementById('modo-toggle');
+      
+        botonModo.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+        });
+      </script>
+      
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <h3>Unete</h3>
+                    <li><a href="/formulario/formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+            <div class="mapa">
+                <h2>¿Dónde estamos?</h2>
+                <div class="mapa-contenedor">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1743920320366!6m8!1m7!1soo9Paq0_wZK9_2CVhonnnA!2m2!1d-24.188764241836!2d-65.29459801253627!3f71.02562670407575!4f-35.74684803639043!5f0.7820865974627469"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Síguenos en redes sociales</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 GYM UNJU. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
